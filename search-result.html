@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedBus Search Results</title>
+    <link rel="stylesheet" href="search-results.css">
+</head>
+<body>
+    <h1>Welcome to search page</h1>
+    <section class="breadcrumb-section">
+        <div class="breadcrumb-container">
+            <!-- Breadcrumb Navigation -->
+            <ul class="breadcrumb-list" vocab="http://schema.org/" typeof="BreadcrumbList">
+                <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+                    <a href="/" class="breadcrumb-link" property="item" typeof="WebPage">
+                        <span property="name">Bus Ticket</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                <!-- <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+                    <a href="/bus-tickets/mumbai-to-pune" class="breadcrumb-link" property="item" typeof="WebPage">
+                        <span property="name">Mumbai to Pune Bus</span>
+                    </a>
+                    <meta property="position" content="2">
+                </li> -->
+                <pre><span id="source"></span><span> To </span><span id="destination"></span><span> On </span><span id="date"></span></pre>
+            </ul>
+        </div>
+        <!-- Page Heading -->
+        <div class="page-heading">
+            <h1 class="page-title">Mumbai to Pune Bus</h1>
+        </div>
+    </section>
+
+
+    <div id="result-section" class="result-sec">
+        <div scrollthreshold="1">
+            <ul class="bus-items">
+                <!-- Bus Item 1 -->
+                <li id="26958770" class="row-sec clearfix">
+                    <div class="bus-item">
+                        <div class="bus-item-details">
+                            <div class="row-one">
+                                <div class="column-two p-right-10 w-30 fl">
+                                    <div class="travels lh-24 f-bold d-color">VRL Travels</div>
+                                    <div class="bus-type f-12 m-top-16 l-color evBus">NON A/C Sleeper (2+1)</div>
+                                </div>
+                                <div class="column-three p-right-10 w-10 fl">
+                                    <div class="dp-time f-19 d-color f-bold">16:00</div>
+                                    <div class="dp-loc l-color w-wrap f-12 m-top-16" title="Borivali East">Borivali East</div>
+                                </div>
+                                <div class="column-four p-right-10 w-10 fl">
+                                    <div class="dur l-color lh-24">05h 45m</div>
+                                </div>
+                                <div class="column-five p-right-10 w-10 fl">
+                                    <div class="bp-time f-19 d-color disp-Inline">21:45</div>
+                                    <div class="bp-loc l-color w-wrap f-12 m-top-16" title="Hinje Wadi">Hinje Wadi</div>
+                                </div>
+                                <div class="column-six p-right-10 w-10 fl">
+                                    <div class="rating-sec lh-24">
+                                        <div class="lh-18 rating rat-green">
+                                            <i class="icon icon-ic-star d-block"></i>
+                                            <span>3.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column-seven p-right-10 w-15 fl">
+                                    <div class="seat-fare">
+                                        <div class="starts">Starts from</div>
+                                        <div class="fare d-block">INR <span class="f-19 f-bold">500</span></div>
+                                    </div>
+                                </div>
+                                <div class="column-eight w-15 fl">
+                                    <div class="seat-left m-top-16">23<span class="l-color"> Seats available</span></div>
+                                    <div class="window-left m-top-8">3 <span class="l-color"> Single</span></div>
+                                </div>
+                            </div>
+                            <!-- <div class="row-two-container">
+                                <div class="row-two-first-container">
+                                    <div class="row-two m-top-10">
+                                        <div class="amenities-icon fl">
+                                            <ul class="amenities-ul">
+                                                <li class="d-block tooltip" title="Track My Bus">
+                                                    <i class="icon icon-am_19 d-block"></i>
+                                                    <span class="tooltiptext">Track My Bus</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="hero-feature fl clearfix">
+                                            <span class="txt-block">
+                                                <i class="icon icon-addfil_0 fl icon-addfil_2"></i>
+                                                <span class="d-color">Live Tracking</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="button view-seats fr">View Seats</div>
+                    <div>
+                        <!-- <ul class="fr bottom-panel d-color">
+                            <li class="amenties b-p-list"><span class="txt-val">Amenities</span></li>
+                            <li class="amenties b-p-list"><span class="txt-val">Bus Photos</span></li>
+                            <li class="amenties b-p-list"><span class="txt-val">Boarding & Dropping Points</span></li>
+                            <li class="amenties b-p-list"><span class="txt-val">Reviews</span></li>
+                            <li class="amenties b-p-list"><span class="txt-val">Booking policies</span></li>
+                        </ul> -->
+                        <div class="clearfix"></div>
+                        <div class="panel-loader hide"></div>
+                    </div>
+                </li>
+                <!-- Repeat for other bus items -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Get the query parameters from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Fetch the values of the parameters
+        const source = urlParams.get('source');
+        const destination = urlParams.get('destination');
+        const date = urlParams.get('date');
+
+        // Display the values on the page
+        document.getElementById('source').textContent = source;
+        document.getElementById('destination').textContent = destination;
+        document.getElementById('date').textContent = date;
+    </script>
+</body>
+</html>

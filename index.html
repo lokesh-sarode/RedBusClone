@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking Online at Cheapest Price with Top Bus Operators - RedBus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-section">
+            <img class="logo" src="images/rdc-redbus-logo.webp" alt="redbus logo">
+            <span class="vertical-separator"></span>
+            <div class="tickets">
+                <div class="ticket-option bus">
+                    <img src="images/redbus-white.png" alt="bus tickets" class="icon">
+                    <span>Bus Tickets</span>
+                </div>
+                <div class="ticket-option train">
+                    <img src="images/rail_vertical.svg" alt="train tickets" class="icon">
+                    <span>Train Tickets</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-actions">
+            <div class="action-item">
+                <span class="material-icons">headset_mic</span>
+                <span>Help</span>
+            </div>
+            <div class="action-item dropdown">
+                <span class="material-icons">g_translate</span>
+                <button class="btn dropdown-toggle" type="button" id="myBtn" data-toggle="dropdown">
+                    English
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">हिंदी (Hindi)</a>
+                    <a class="dropdown-item" href="#">தமிழ் (Tamil)</a>
+                </div>
+            </div>
+            <div class="action-item">
+                <span class="material-icons">account_circle</span>
+                <span>Account</span>
+                <span class="material-icons">keyboard_arrow_down</span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Slogan Section -->
+    <div class="slogan">
+        <h2>India's No. 1 Online Bus Ticket Booking Site</h2>
+    </div>
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <picture>
+            <source srcset="https://s3.rdbuz.com/images/webplatform/india/Homepage-header-800.webp 800w,
+            https://s3.rdbuz.com/images/webplatform/india/Homepage-header-1200.webp 1200w,
+            https://s3.rdbuz.com/images/webplatform/india/Homepage-header-1600.webp 1600w,
+            https://s3.rdbuz.com/images/webplatform/india/Homepage-header-2000.webp 2000w" type="image/webp">
+            <img src="https://s3.rdbuz.com/images/webplatform/india/HomeBannerNew.png" alt="redBus Banner" class="hero-image">
+        </picture>
+        
+        <!-- Search Form -->
+        <div class="search-container">
+            <!-- <div class="search-form" >
+                <div class="input-group">
+                    <div class="search-icon">
+                        <i class="material-icons">location_on</i>
+                    </div>
+                    <label for="source">From</label>
+                    <input type="text" id="source">
+                </div>
+                <div class="input-group">
+                    <div class="search-icon">
+                        <i class="material-icons">location_on</i>
+                    </div>
+                    <label for="destination">To</label>
+                    <input type="text" id="destination">
+                </div>
+                <div class="input-group">
+                    <div class="search-icon">
+                        <i class="material-icons">calendar_today</i>
+                    </div>
+                    <input type="date" id="date">
+                </div>
+                <button class="search-button" id="search-button">SEARCH BUSES</button>
+            </div> -->
+            <div class="search-container">
+                <form id="searchForm" class="search-form"> <!-- Add id="searchForm" here -->
+                    <div class="input-group">
+                        <div class="search-icon">
+                            <i class="material-icons">location_on</i>
+                        </div>
+                        <label for="source">From</label>
+                        <input type="text" id="source">
+                    </div>
+                    <div class="input-group">
+                        <div class="search-icon">
+                            <i class="material-icons">location_on</i>
+                        </div>
+                        <label for="destination">To</label>
+                        <input type="text" id="destination">
+                    </div>
+                    <div class="input-group">
+                        <div class="search-icon">
+                            <i class="material-icons">calendar_today</i>
+                        </div>
+                        <input type="date" id="date">
+                    </div>
+                    <button class="search-button" id="search-button">SEARCH BUSES</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Offers Section -->
+    <div class="offers">
+        <div class="offer-header">
+            <h2>TRENDING OFFERS</h2>
+            <a href="https://www.redbus.in/offers" target="_blank" class="view-all">View All</a>
+        </div>
+        <div class="offer-carousel">
+            <div class="offer-card blue">
+                <img src="https://st.redbus.in/images/FIRST/first_26th_sep_2022_ravi/tile-80X80.png" alt="Offer">
+                <div class="offer-details">
+                    <span class="offer-type">BUS</span>
+                    <h3>Save up to Rs 250 on bus tickets</h3>
+                    <span class="validity">Valid till 31 Mar</span>
+                    <div class="offer-code">
+                        <span>FIRST</span>
+                        <img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg" alt="Copy">
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other offer cards -->
+            <div class="offer-card green">
+                <img src="https://st.redbus.in/images/FIRST/first_26th_sep_2022_ravi/tile-80X80.png" alt="Offer">
+                <div class="offer-details">
+                    <span class="offer-type">BUS</span>
+                    <h3>Save up to Rs 250 on bus tickets</h3>
+                    <span class="validity">Valid till 31 Mar</span>
+                    <div class="offer-code">
+                        <span>FIRST</span>
+                        <img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg" alt="Copy">
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other offer cards -->
+            <div class="offer-card red">
+                <img src="https://st.redbus.in/images/FIRST/first_26th_sep_2022_ravi/tile-80X80.png" alt="Offer">
+                <div class="offer-details">
+                    <span class="offer-type">BUS</span>
+                    <h3>Save up to Rs 250 on bus tickets</h3>
+                    <span class="validity">Valid till 31 Mar</span>
+                    <div class="offer-code">
+                        <span>FIRST</span>
+                        <img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg" alt="Copy">
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other offer cards -->
+            <div class="offer-card blue">
+                <img src="https://st.redbus.in/images/FIRST/first_26th_sep_2022_ravi/tile-80X80.png" alt="Offer">
+                <div class="offer-details">
+                    <span class="offer-type">BUS</span>
+                    <h3>Save up to Rs 250 on bus tickets</h3>
+                    <span class="validity">Valid till 31 Mar</span>
+                    <div class="offer-code">
+                        <span>FIRST</span>
+                        <img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg" alt="Copy">
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other offer cards -->
+        </div>
+    </div>
+    
+    <!-- About Us Section -->
+    <div class="about-us">
+        <div class="about-us-left">
+            <h2>NOW, <b>GET MORE THAN JUST BUS</b> TICKETS WITH REDBUS!</h2>
+            <div class="business-unit">
+                <img src="https://s3.rdbuz.com/web/images/layout/rail_vertical.svg" alt="Train Tickets">
+                <div>Train Tickets</div>
+            </div>
+            <div class="info-section">
+                <div class="info-heading">Book IRCTC Train Tickets on redRail with a simple & superfast booking process with no service fee + no payment gateway charge.</div>
+                <div class="info-points">
+                    <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/railAuthorized.png" alt="Authorised IRCTC Partner">
+                    <div>Authorised IRCTC Partner</div>
+                </div>
+                <div class="info-points">
+                    <img src="https://s2.rdbuz.com/web/images/homeV2/AboutUs/railHasslefree.svg" alt="Instant refunds on UPI payments">
+                    <div>Instant refunds on UPI payments</div>
+                </div>
+                <div class="info-points">
+                    <img src="https://s1.rdbuz.com/web/images/homeV2/AboutUs/railrefunds.svg" alt="Hassle-free customer support">
+                    <div>Hassle-free customer support</div>
+                </div>
+            </div>
+            <a href="https://www.redbus.in/railways" class="book-option">Book Train Tickets <i class="icon-thick_Right_arrow"></i></a>
+        </div>
+        <div class="about-us-right">
+            <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/aboutUsImg.svg" alt="About Us Background" class="about-us-bg">
+            <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/railPop.png" alt="Online Train Tickets Booking" class="rail-pop">
+        </div>
+    </div>
+    
+    <!-- App Install Section -->
+    <div class="app-install">
+        <h2>ENJOY THE APP!</h2>
+        <div class="app-install-content">
+            <div class="app-info">
+                <div class="key-features">
+                    <div class="key-point">
+                        <img src="https://s3.rdbuz.com/web/images/homeV2/appinstall/tick.svg" alt="Tick">
+                        <span>Quick access</span>
+                    </div>
+                    <div class="key-point">
+                        <img src="https://s3.rdbuz.com/web/images/homeV2/appinstall/tick.svg" alt="Tick">
+                        <span>Superior live tracking</span>
+                    </div>
+                </div>
+                <div class="rate-section">
+                    <div class="rating">
+                        <span>4.5 &starf;</span>
+                        <i class="icon-appinstallstar"></i>
+                        <div class="downloads-text">50M+ downloads</div>
+                        <div class="store-name">Play Store</div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="rating">
+                        <span>4.6 &starf;</span>
+                        <i class="icon-appinstallstar"></i>
+                        <div class="downloads-text">50M+ downloads</div>
+                        <div class="store-name">App Store</div>
+                    </div>
+                </div>
+            </div>
+            <div class="qr-section">
+                <div class="qr-container">
+                    <span>Scan to download</span>
+                    <img src="https://s1.rdbuz.com/web/images/homeV2/qrImage.svg" alt="QR Code">
+                </div>
+                <div class="download-links">
+                    <span>Download the App on</span>
+                    <div class="store-buttons">
+                        <img src="https://s2.rdbuz.com/web/images/homeV2/appinstall/playStore.svg" alt="Play Store">
+                        <img src="https://s3.rdbuz.com/web/images/homeV2/appinstall/appStore.svg" alt="App Store">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Primo Section -->
+    <div class="primo-section">
+        <img src="https://s3.rdbuz.com/images/webplatform/india/primoHomeBannerComp.png" alt="Primo Banner">
+        <div class="primo-features">
+            <div class="feature">
+                <i class="icon-primoTimer"></i>
+                <div>
+                    <div>On time</div>
+                    <div>Punctual arrivals on 95% trips</div>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="icon-primoCourteous"></i>
+                <div>
+                    <div>Friendly Staff</div>
+                    <div>Always ready to help</div>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="icon-primoStar"></i>
+                <div>
+                    <div>Top Rated</div>
+                    <div>Buses with 4+ star rating</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <ul class="footer-links">
+            <!-- RedBus Logo and Description -->
+            <li class="footer-section redbus">
+                <div class="footer-logo">
+                    <picture>
+                        <source srcset="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.webp" type="image/webp">
+                        <img src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.svg" alt="redBus" class="redbus-logo">
+                    </picture>
+                </div>
+                <p class="footer-text">redBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.</p>
+            </li>
+            
+            <!-- About redBus Links -->
+            <li class="footer-section">
+                <strong class="section-title">About redBus</strong>
+                <a href="https://www.redbus.in/info/aboutus" class="footer-link">About us</a>
+                <a href="https://www.redbus.in/info/Investors" class="footer-link">Investor Relations</a>
+                <a href="https://www.redbus.in/info/contactus" class="footer-link">Contact us</a>
+                <a href="https://www.redbus.in/info/mobile" class="footer-link">redBus on mobile</a>
+                <a href="https://www.redbus.in/sitemap.html" class="footer-link">Sitemap</a>
+                <a href="https://www.redbus.in/info/offerTerms" class="footer-link">Offers</a>
+                <a href="https://www.redbus.in/careers" class="footer-link">Careers</a>
+                <a href="https://www.redbus.in/values" class="footer-link">Values</a>
+            </li>
+            
+            <!-- Info Links -->
+            <li class="footer-section">
+                <strong class="section-title">Info</strong>
+                <a href="https://www.redbus.in/info/termscondition" class="footer-link">T&amp;C</a>
+                <a href="https://www.redbus.in/info/privacypolicy" class="footer-link">Privacy policy</a>
+                <a href="https://www.redbus.in/info/faq" class="footer-link">FAQ</a>
+                <a href="https://blog.redbus.in" class="footer-link">Blog</a>
+                <a href="https://onboardvendor.redbus.in/" class="footer-link">Bus operator registration</a>
+                <a href="https://in3.seatseller.travel/" class="footer-link">Agent registration</a>
+                <a href="https://www.acko.com/" class="footer-link">Insurance partner</a>
+                <a href="https://www.redbus.in/info/useragreement" class="footer-link">User agreement</a>
+                <a href="https://www.redbus.in/primo/primo-service" class="footer-link">Primo Bus</a>
+                <a href="https://www.redbus.in/bus-timetable" class="footer-link">Bus Timetable</a>
+            </li>
+            
+            <!-- Global Sites Links -->
+            <li class="footer-section">
+                <strong class="section-title">Global Sites</strong>
+                <a href="https://www.redbus.in/" class="footer-link">India</a>
+                <a href="https://www.redbus.sg/" class="footer-link">Singapore</a>
+                <a href="https://www.redbus.my/" class="footer-link">Malaysia</a>
+                <a href="https://www.redbus.id/" class="footer-link">Indonesia</a>
+                <a href="https://www.redbus.pe/" class="footer-link">Peru</a>
+                <a href="https://www.redbus.co/" class="footer-link">Colombia</a>
+                <a href="https://www.redbus.com.kh/" class="footer-link">Cambodia</a>
+                <a href="https://www.redbus.vn/" class="footer-link">Vietnam</a>
+            </li>
+            
+            <!-- Our Partners Links -->
+            <li class="footer-section">
+                <strong class="section-title">Our Partners</strong>
+                <a href="https://www.goibibo.com/bus/" class="footer-link">Goibibo Bus</a>
+                <a href="https://www.goibibo.com/hotels/" class="footer-link">Goibibo Hotels</a>
+                <a href="https://www.makemytrip.com/hotels/" class="footer-link">Makemytrip Hotels</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Scripts -->
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Get the values from the input fields
+        const source = document.getElementById('source').value;
+        const destination = document.getElementById('destination').value;
+        const date = document.getElementById('date').value;
+
+        // Construct the URL with query parameters
+        const url = `search-result.html?source=${encodeURIComponent(source)}&destination=${encodeURIComponent(destination)}&date=${encodeURIComponent(date)}`;
+
+        // Redirect to the search-result.html page with the query parameters
+        window.location.href = url;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>
