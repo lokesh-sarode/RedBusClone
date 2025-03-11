@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedBus Search Results</title>
-    <link rel="stylesheet" href="search-results.css">
+    <link rel="stylesheet" href="styles/search-results.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Welcome to search page</h1>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-section">
+            <img class="logo" src="images/rdc-redbus-logo.webp" alt="redbus logo">
+            <span class="vertical-separator"></span>
+            <div class="tickets">
+                <div class="ticket-option bus">
+                    <img src="images/redbus-white.png" alt="bus tickets" class="icon">
+                    <span>Bus Tickets</span>
+                </div>
+                <div class="ticket-option train">
+                    <img src="images/rail_vertical.svg" alt="train tickets" class="icon">
+                    <span>Train Tickets</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-actions">
+            <div class="action-item">
+                <span class="material-icons">headset_mic</span>
+                <span>Help</span>
+            </div>
+            <div class="action-item dropdown">
+                <span class="material-icons">g_translate</span>
+                <button class="btn dropdown-toggle" type="button" id="myBtn" data-toggle="dropdown">
+                    English
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">हिंदी (Hindi)</a>
+                    <a class="dropdown-item" href="#">தமிழ் (Tamil)</a>
+                </div>
+            </div>
+            <div class="action-item">
+                <span class="material-icons">account_circle</span>
+                <span>Account</span>
+                <span class="material-icons">keyboard_arrow_down</span>
+            </div>
+        </div>
+    </header>
+
+
     <section class="breadcrumb-section">
         <div class="breadcrumb-container">
             <!-- Breadcrumb Navigation -->
@@ -18,18 +61,8 @@
                     </a>
                     <meta property="position" content="1">
                 </li>
-                <!-- <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-                    <a href="/bus-tickets/mumbai-to-pune" class="breadcrumb-link" property="item" typeof="WebPage">
-                        <span property="name">Mumbai to Pune Bus</span>
-                    </a>
-                    <meta property="position" content="2">
-                </li> -->
                 <pre><span id="source"></span><span> To </span><span id="destination"></span><span> On </span><span id="date"></span></pre>
             </ul>
-        </div>
-        <!-- Page Heading -->
-        <div class="page-heading">
-            <h1 class="page-title">Mumbai to Pune Bus</h1>
         </div>
     </section>
 
@@ -76,37 +109,106 @@
                                     <div class="window-left m-top-8">3 <span class="l-color"> Single</span></div>
                                 </div>
                             </div>
-                            <!-- <div class="row-two-container">
-                                <div class="row-two-first-container">
-                                    <div class="row-two m-top-10">
-                                        <div class="amenities-icon fl">
-                                            <ul class="amenities-ul">
-                                                <li class="d-block tooltip" title="Track My Bus">
-                                                    <i class="icon icon-am_19 d-block"></i>
-                                                    <span class="tooltiptext">Track My Bus</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="hero-feature fl clearfix">
-                                            <span class="txt-block">
-                                                <i class="icon icon-addfil_0 fl icon-addfil_2"></i>
-                                                <span class="d-color">Live Tracking</span>
-                                            </span>
+                        </div>
+                    </div>
+                    <div class="button view-seats fr">Book Ticket</div>
+                    <div>
+                        <div class="clearfix"></div>
+                        <div class="panel-loader hide"></div>
+                    </div>
+                </li>
+                <!-- Repeat for other bus items -->
+                <!-- Bus Item 2 -->
+                <li id="26958771" class="row-sec clearfix">
+                    <div class="bus-item">
+                        <div class="bus-item-details">
+                            <div class="row-one">
+                                <div class="column-two p-right-10 w-30 fl">
+                                    <div class="travels lh-24 f-bold d-color">Purple Bus - Metrolink</div>
+                                    <div class="bus-type f-12 m-top-16 l-color evBus">Volvo A/C Seater (2+2)</div>
+                                </div>
+                                <div class="column-three p-right-10 w-10 fl">
+                                    <div class="dp-time f-19 d-color f-bold">05:45</div>
+                                    <div class="dp-loc l-color w-wrap f-12 m-top-16" title="Borivali East">Borivali West</div>
+                                </div>
+                                <div class="column-four p-right-10 w-10 fl">
+                                    <div class="dur l-color lh-24">04h 45m</div>
+                                </div>
+                                <div class="column-five p-right-10 w-10 fl">
+                                    <div class="bp-time f-19 d-color disp-Inline">10:30</div>
+                                    <div class="bp-loc l-color w-wrap f-12 m-top-16" title="Kothrud">Kothrud</div>
+                                </div>
+                                <div class="column-six p-right-10 w-10 fl">
+                                    <div class="rating-sec lh-24">
+                                        <div class="lh-18 rating rat-green">
+                                            <i class="icon icon-ic-star d-block"></i>
+                                            <span>4.5</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div> -->
+                                <div class="column-seven p-right-10 w-15 fl">
+                                    <div class="seat-fare">
+                                        <div class="starts">Starts from</div>
+                                        <div class="fare d-block">INR <span class="f-19 f-bold">399</span></div>
+                                    </div>
+                                </div>
+                                <div class="column-eight w-15 fl">
+                                    <div class="seat-left m-top-16">22<span class="l-color"> Seats available</span></div>
+                                    <!-- <div class="window-left m-top-8">5 <span class="l-color"> Single</span></div> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="button view-seats fr">View Seats</div>
+                    <div class="button view-seats fr">Book Ticket</div>
                     <div>
-                        <!-- <ul class="fr bottom-panel d-color">
-                            <li class="amenties b-p-list"><span class="txt-val">Amenities</span></li>
-                            <li class="amenties b-p-list"><span class="txt-val">Bus Photos</span></li>
-                            <li class="amenties b-p-list"><span class="txt-val">Boarding & Dropping Points</span></li>
-                            <li class="amenties b-p-list"><span class="txt-val">Reviews</span></li>
-                            <li class="amenties b-p-list"><span class="txt-val">Booking policies</span></li>
-                        </ul> -->
+                        <div class="clearfix"></div>
+                        <div class="panel-loader hide"></div>
+                    </div>
+                </li>
+                <!-- Repeat for other bus items -->
+                <!-- Bus Item 3 -->
+                <li id="26958772" class="row-sec clearfix">
+                    <div class="bus-item">
+                        <div class="bus-item-details">
+                            <div class="row-one">
+                                <div class="column-two p-right-10 w-30 fl">
+                                    <div class="travels lh-24 f-bold d-color">Neeta Tours and Travels</div>
+                                    <div class="bus-type f-12 m-top-16 l-color evBus">Bharat Benz A/C Seater (2+2)</div>
+                                </div>
+                                <div class="column-three p-right-10 w-10 fl">
+                                    <div class="dp-time f-19 d-color f-bold">06:30</div>
+                                    <div class="dp-loc l-color w-wrap f-12 m-top-16" title="Borivali East">Borivali West</div>
+                                </div>
+                                <div class="column-four p-right-10 w-10 fl">
+                                    <div class="dur l-color lh-24">04h 45m</div>
+                                </div>
+                                <div class="column-five p-right-10 w-10 fl">
+                                    <div class="bp-time f-19 d-color disp-Inline">11:15</div>
+                                    <div class="bp-loc l-color w-wrap f-12 m-top-16" title="Hinjewadi Bridge">Hinjewadi Bridge (Bhujbal Chawk)</div>
+                                </div>
+                                <div class="column-six p-right-10 w-10 fl">
+                                    <div class="rating-sec lh-24">
+                                        <div class="lh-18 rating rat-green">
+                                            <i class="icon icon-ic-star d-block"></i>
+                                            <span>3.8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column-seven p-right-10 w-15 fl">
+                                    <div class="seat-fare">
+                                        <div class="starts">Starts from</div>
+                                        <div class="fare d-block">INR <span class="f-19 f-bold">299</span></div>
+                                    </div>
+                                </div>
+                                <div class="column-eight w-15 fl">
+                                    <div class="seat-left m-top-16">42<span class="l-color"> Seats available</span></div>
+                                    <!-- <div class="window-left m-top-8">12 <span class="l-color"> Single</span></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button view-seats fr">Book Ticket</div>
+                    <div>
                         <div class="clearfix"></div>
                         <div class="panel-loader hide"></div>
                     </div>
@@ -115,6 +217,70 @@
             </ul>
         </div>
     </div>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <!-- RedBus Logo and Description -->
+            <li class="footer-section redbus">
+                <div class="footer-logo">
+                    <picture>
+                        <source srcset="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.webp" type="image/webp">
+                        <img src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.svg" alt="redBus" class="redbus-logo">
+                    </picture>
+                </div>
+                <p class="footer-text">redBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.</p>
+            </li>
+            
+            <!-- About redBus Links -->
+            <li class="footer-section">
+                <strong class="section-title">About redBus</strong>
+                <a href="https://www.redbus.in/info/aboutus" class="footer-link">About us</a>
+                <a href="https://www.redbus.in/info/Investors" class="footer-link">Investor Relations</a>
+                <a href="https://www.redbus.in/info/contactus" class="footer-link">Contact us</a>
+                <a href="https://www.redbus.in/info/mobile" class="footer-link">redBus on mobile</a>
+                <a href="https://www.redbus.in/sitemap.html" class="footer-link">Sitemap</a>
+                <a href="https://www.redbus.in/info/offerTerms" class="footer-link">Offers</a>
+                <a href="https://www.redbus.in/careers" class="footer-link">Careers</a>
+                <a href="https://www.redbus.in/values" class="footer-link">Values</a>
+            </li>
+            
+            <!-- Info Links -->
+            <li class="footer-section">
+                <strong class="section-title">Info</strong>
+                <a href="https://www.redbus.in/info/termscondition" class="footer-link">T&amp;C</a>
+                <a href="https://www.redbus.in/info/privacypolicy" class="footer-link">Privacy policy</a>
+                <a href="https://www.redbus.in/info/faq" class="footer-link">FAQ</a>
+                <a href="https://blog.redbus.in" class="footer-link">Blog</a>
+                <a href="https://onboardvendor.redbus.in/" class="footer-link">Bus operator registration</a>
+                <a href="https://in3.seatseller.travel/" class="footer-link">Agent registration</a>
+                <a href="https://www.acko.com/" class="footer-link">Insurance partner</a>
+                <a href="https://www.redbus.in/info/useragreement" class="footer-link">User agreement</a>
+                <a href="https://www.redbus.in/primo/primo-service" class="footer-link">Primo Bus</a>
+                <a href="https://www.redbus.in/bus-timetable" class="footer-link">Bus Timetable</a>
+            </li>
+            
+            <!-- Global Sites Links -->
+            <li class="footer-section">
+                <strong class="section-title">Global Sites</strong>
+                <a href="https://www.redbus.in/" class="footer-link">India</a>
+                <a href="https://www.redbus.sg/" class="footer-link">Singapore</a>
+                <a href="https://www.redbus.my/" class="footer-link">Malaysia</a>
+                <a href="https://www.redbus.id/" class="footer-link">Indonesia</a>
+                <a href="https://www.redbus.pe/" class="footer-link">Peru</a>
+                <a href="https://www.redbus.co/" class="footer-link">Colombia</a>
+                <a href="https://www.redbus.com.kh/" class="footer-link">Cambodia</a>
+                <a href="https://www.redbus.vn/" class="footer-link">Vietnam</a>
+            </li>
+            
+            <!-- Our Partners Links -->
+            <li class="footer-section">
+                <strong class="section-title">Our Partners</strong>
+                <a href="https://www.goibibo.com/bus/" class="footer-link">Goibibo Bus</a>
+                <a href="https://www.goibibo.com/hotels/" class="footer-link">Goibibo Hotels</a>
+                <a href="https://www.makemytrip.com/hotels/" class="footer-link">Makemytrip Hotels</a>
+            </li>
+        </ul>
+    </footer>
 
     <script>
         // Get the query parameters from the URL
@@ -130,5 +296,6 @@
         document.getElementById('destination').textContent = destination;
         document.getElementById('date').textContent = date;
     </script>
+    <script src="scripts/view-details.js"></script>
 </body>
 </html>

@@ -1,23 +1,4 @@
 
-// const searchBtn = document.getElementById("search-button")
-
-// searchBtn.addEventListener('click', function ()
-// {
-//     const source = document.getElementById('source')
-//     const destination = document.getElementById('destination')
-//     const date = document.getElementById('date')
-
-//     const queryParams = new URLSearchParams(
-//         {
-//             source: source,
-//             destination: destination,
-//             date: date,
-//         }
-//     )
-//     window.location.href = `search-result.html?${queryParams.toString()}`
-// })
-
-
 const searchBtn = document.getElementById("search-button");
 
 searchBtn.addEventListener('click', function () {

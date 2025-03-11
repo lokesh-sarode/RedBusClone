@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Ticket</title>
+    <link rel="stylesheet" href="styles/viewticket.css">
+</head>
+<body>
+    <div class="ticket">
+        <div class="ticket-header">
+            <h2>RedBus Ticket</h2>
+        </div>
+        <div class="ticket-body">
+            <div class="ticket-info">
+                <p><strong>Passenger Name:</strong> <span id="ticket-name"></span></p>
+                <p><strong>Email:</strong> <span id="ticket-email"></span></p>
+                <p><strong>Phone:</strong> <span id="ticket-phone"></span></p>
+                <p><strong>Bus Name:</strong> <span id="ticket-bus"></span></p>
+                <p><strong>Departure Time:</strong> <span id="ticket-time"></span></p>
+                <p><strong>Total Amount:</strong> <span id="ticket-amount"></span></p>
+                <p><strong>Payment ID:</strong> <span id="ticket-payment-id"></span></p>
+            </div>
+            <!-- <div class="ticket-qr">
+                <img src="images/qr-code.jpg" alt="Ticket QR Code">
+            </div> -->
+        </div>
+        <div class="ticket-footer">
+            <p>Thank you for booking with RedBus!</p>
+        </div>
+    </div>
+
+    <!-- Download Receipt Button -->
+    <div class="download-receipt">
+        <button id="download-button">Download Receipt</button>
+    </div>
+    <div class="download-receipt">
+        <a href="/index.html">
+        <button id="download-button">Home</button>
+    </a>
+    </div>
+
+    <!-- Include jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="scripts/viewticket.js"></script>
+    
+</body>
+</html>

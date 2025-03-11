@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* General Styles */
+:root {
+    --redbus: #D84E55;
+    --gray-icons: #4A4A4A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: white;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 20px 0px 20px;
+    min-height: 100px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px;
+    
+}
+
+.vertical-separator {
+    width: 1px;
+    height: 20px;
+    background: #e0e0e0;
+}
+
+.tickets {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.ticket-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ticket-option.bus {
+    background: var(--redbus);
+    color: white;
+}
+
+.ticket-option.train:hover {
+    background: whitesmoke;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+}
+.icon {
+    width: 30px; /* Adjusted icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.action-item:hover {
+    background: whitesmoke;
+}
+
+
+#myBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Bus Items */
+.bus-items {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    line-height: 2rem;
+    
+}
+
+.row-sec {
+    /* font-family: 'Montserrat', sans-serif; */
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+}
+
+.bus-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bus-item-details {
+    flex: 1;
+}
+
+.row-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-two, .column-three, .column-four, .column-five, .column-six, .column-seven, .column-eight {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.travels {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--redbus);
+}
+
+.bus-type {
+    font-size: 0.9rem;
+    color: var(--gray-icons);
+}
+
+.dp-time, .bp-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--redbus);
+}
+
+.dp-loc, .bp-loc {
+    font-size: 0.9rem;
+    color: var(--gray-icons);
+}
+
+.dur {
+    font-size: 0.9rem;
+    color: var(--gray-icons);
+}
+
+.rating-sec {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.seat-fare {
+    text-align: right;
+}
+
+.fare {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--redbus);
+}
+
+.button.view-seats.fr{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 0px 20px;
+    background-color: var(--redbus);
+    color: white;
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; /* Remove underline */
+}
+.button.view-seats.fr:hover {
+    background-color: #f06a63; /* Darker shade on hover */
+}
+.seat-left, .window-left {
+    font-size: 0.9rem;
+    color: var(--gray-icons);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row-one {
+        flex-direction: column;
+    }
+
+    .column-two, .column-three, .column-four, .column-five, .column-six, .column-seven, .column-eight {
+        padding: 5px 0;
+    }
+}
+
+
+/* Breadcrumb Section */
+.breadcrumb-section {
+    background-color: #f8f4f4; /* Light gray background */
+    padding: 10px 0; /* Padding for the section */
+}
+
+.breadcrumb-container {
+    width: 95%; /* Set width */
+    margin: 0 auto; /* Center the container */
+    padding-left: 1.5%; /* Left padding */
+}
+
+/* Breadcrumb List */
+.breadcrumb-list {
+    display: inline-block; 
+    vertical-align: middle; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.breadcrumb-item {
+    display: inline-block; 
+    vertical-align: middle;
+    color: #ea4c53; 
+    font-size: 12px; 
+    text-transform: capitalize;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+    content: ">"; 
+    margin: 0 5px; 
+    color: #3e3e52; 
+}
+
+.breadcrumb-link {
+    font-size: 12px; 
+    color: #3e3e52; 
+    text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Page Heading */
+.page-heading {
+    border-bottom: 1px solid #ddd; 
+    padding: 10px 1.5%; 
+}
+
+.page-title {
+    font-size: 1em;
+    color: #3e3e52;
+    margin: 0; /* Remove default margin */
+}
+
+
+
+/* Footer Styles */
+.footer {
+    background: #f8f8f8; /* Light gray background */
+    padding: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 17rem;
+}
+.footer-section:first-child
+{
+    padding: 2rem;
+}
+
+.footer-logo img {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #666; /* Light gray text */
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    color: #1d1d1d; /* Dark gray text */
+    margin: 0;
+}
+
+.footer-link {
+    font-size: 0.9rem;
+    color: #3e3e52; /* Dark blue text */
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #D84E55; /* RedBus brand color on hover */
+    text-decoration: underline;
+}
+
