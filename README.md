@@ -1,10 +1,10 @@
-🚀 **RedBus Static Website**
+🚀 **RedBusClone Static Website**
 
 **Tagline:** A user-friendly online bus ticket booking platform with affordable prices and top bus operators
 
 📖 **Description**
 
-RedBus is a pioneering online bus ticket booking platform that aims to provide a seamless and hassle-free experience for travelers. With a vast network of bus operators and routes, RedBus offers a wide range of options for booking tickets at affordable prices. Our platform is designed to be user-friendly, making it easy for users to search, compare, and book tickets online. With RedBus, you can enjoy a stress-free journey while enjoying the comfort and convenience of our services.
+This project is a clone of the RedBus website. RedBus is a pioneering online bus ticket booking platform that aims to provide a seamless and hassle-free experience for travelers. With a vast network of bus operators and routes, RedBus offers a wide range of options for booking tickets at affordable prices. Our platform is designed to be user-friendly, making it easy for users to search, compare, and book tickets online. With RedBus, you can enjoy a stress-free journey while enjoying the comfort and convenience of our services.
 
 **Features**
 
@@ -48,9 +48,9 @@ view-details.js
 
 **How to Run**
 
-1. Clone the repository: `git clone https://github.com/your-username/RedBus.git`
-2. Open the project in Visual Studio Code: `code RedBus`
-3. Open the `index.html` file in a web browser: `file:///path/to/RedBus/index.html`
+1. Clone the repository: `git clone https://github.com/lokesh-sarode/RedBusClone.git`
+2. Open the project in Visual Studio Code: `code RedBusClone`
+3. Open the `index.html` file in a web browser: `file:///path/to/RedBusClone/index.html`
 4. Use the search function to find tickets: Enter your source and destination, date, and time to search for tickets.
 5. Book a ticket: Click on the "Book Now" button to book a ticket.
 6. Confirm your booking: You will receive a confirmation email and SMS notification once your ticket is booked.
@@ -71,10 +71,4 @@ N/A (Static Website)
 
 **Author**
 
-Your Name
-
-**License**
-
-MIT License
-
-I hope this README meets your expectations! Let me know if you need any further assistance. 😊
+Lokesh Sarode 
